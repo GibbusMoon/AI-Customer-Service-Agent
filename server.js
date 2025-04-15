@@ -31,7 +31,7 @@ const app = express();
 //--Middleware Activation--//
 app.use(express.json()); 
 app.use(cors());
-app.use(express.static(path.join(__dirname, "frontend", "dist")));
+//app.use(express.static(path.join(__dirname, "frontend", "dist")));
 
 //--MongoDB Request--//
 
@@ -56,9 +56,9 @@ let currentOrder;
  * customer service agent    *
  ****************************/
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-})
+//app.get("/", (req, res) => {
+//    res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+//})
 
 app.get("/api/query", async (req, res) => {
     try {
