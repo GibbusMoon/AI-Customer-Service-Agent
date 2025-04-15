@@ -56,9 +56,9 @@ let currentOrder;
  * customer service agent    *
  ****************************/
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-})
+//app.get("/", (req, res) => {
+//    res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+//})
 
 app.get("/api/query", async (req, res) => {
     try {
