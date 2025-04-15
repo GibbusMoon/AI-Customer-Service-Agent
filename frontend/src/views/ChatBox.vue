@@ -73,7 +73,7 @@
       
         this.messages.push({ text: this.userInput, sender: "user" });
 
-        const url = "http://" + process.env.VUE_APP_HOST_IP + "/api/query";
+        const url = process.env.VUE_APP_HOST_IP + "/api/query";
                 
 
         const response = await axios.get(url, { 
